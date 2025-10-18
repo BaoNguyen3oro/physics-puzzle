@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqm8xv2yvwc3r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_box"]
+size = Vector2(64, 64)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1"]
+font_size = 32
+
+[node name="Box" type="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_box")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+color = Color(0.8, 0.2, 0.2, 1)
