@@ -1,0 +1,132 @@
+================================================================================
+HOW TO CREATE GITHUB RELEASE - EASY METHOD
+================================================================================
+
+STEP 1: EXPORT YOUR GAME (If not done yet)
+-------------------------------------------
+1. Open Godot 4.5
+2. Go to: Editor → Manage Export Templates → Download and Install
+3. Go to: Project → Export
+4. Add preset: Windows Desktop
+5. Configure: Check "64 Bits" and "Embed PCK"
+6. Export to: C:\Users\kanbo\Documents\physics-puzzle\builds\PhysicsPuzzle.exe
+
+
+STEP 2: CREATE GITHUB RELEASE - USE THIS DIRECT LINK
+-----------------------------------------------------
+
+🔗 CLICK THIS LINK (or copy to browser):
+https://github.com/BaoNguyen3oro/physics-puzzle/releases/new
+
+This takes you DIRECTLY to the release creation page!
+
+
+STEP 3: FILL IN THE RELEASE FORM
+---------------------------------
+
+On the release page, fill in these fields:
+
+1. Choose a tag: "v1.0" (select from dropdown or type it)
+
+2. Target: "master" (leave default)
+
+3. Release title:
+   PhysicsPuzzle v1.0 - First Release
+
+4. Describe this release:
+   Copy EVERYTHING from: RELEASE_NOTES_v1.0.md (in this folder)
+
+5. Attach binaries:
+   - Click "Attach binaries by dropping them here..."
+   - Select: PhysicsPuzzle.exe (from this builds folder)
+   - Wait for upload to complete (~60-90 MB)
+
+6. Set as latest release: ✅ Check this box
+
+7. Click: "Publish release" (green button)
+
+
+ALTERNATIVE WAYS TO FIND RELEASES PAGE
+---------------------------------------
+
+If the direct link doesn't work, try these:
+
+Method A: Via Right Sidebar
+1. Go to: https://github.com/BaoNguyen3oro/physics-puzzle
+2. Look at RIGHT SIDEBAR
+3. Find "Releases" section (shows "0 releases" or tag count)
+4. Click "Releases"
+5. Click "Draft a new release" or "Create a new release"
+
+Method B: Via Tags
+1. Go to: https://github.com/BaoNguyen3oro/physics-puzzle/tags
+2. Find tag "v1.0"
+3. Click "..." (three dots) next to v1.0
+4. Click "Create release"
+
+Method C: Via Repository Navigation
+1. Go to main repository page
+2. Look for tabs: Code, Issues, Pull requests, etc.
+3. Find "Releases" (might be in "..." menu if screen is narrow)
+4. Click "Releases"
+5. Click "Create a new release"
+
+
+VERIFY YOUR TAG EXISTS
+-----------------------
+Before creating release, verify tag exists:
+https://github.com/BaoNguyen3oro/physics-puzzle/tags
+
+You should see: v1.0 tag (we created it earlier)
+
+
+AFTER PUBLISHING
+----------------
+Your release will be at:
+https://github.com/BaoNguyen3oro/physics-puzzle/releases/tag/v1.0
+
+Anyone can download your game:
+https://github.com/BaoNguyen3oro/physics-puzzle/releases/download/v1.0/PhysicsPuzzle.exe
+
+
+TROUBLESHOOTING
+---------------
+
+Problem: "I don't see the release button"
+Solution: Use the direct link above - it bypasses navigation!
+
+Problem: "Page says 'You don't have permission'"
+Solution: Make sure you're logged in as BaoNguyen3oro
+
+Problem: "Tag v1.0 doesn't appear in dropdown"
+Solution: Just type "v1.0" and press Enter - it will use existing tag
+
+Problem: "Upload fails or times out"
+Solution: 
+  - Check your internet connection
+  - Try again (GitHub sometimes has issues)
+  - Make sure file is under 2GB (yours is ~60-90MB, so fine)
+
+Problem: "I haven't exported the .exe yet"
+Solution: Go back to STEP 1 above
+
+
+QUICK START
+-----------
+1. Export game in Godot → PhysicsPuzzle.exe
+2. Open: https://github.com/BaoNguyen3oro/physics-puzzle/releases/new
+3. Fill in: Tag "v1.0", Title, Description
+4. Upload: PhysicsPuzzle.exe
+5. Click: Publish release
+
+Done! 🎉
+
+
+NEED HELP?
+----------
+If you still can't find the release page, let me know and I can:
+- Check if the tag was pushed correctly
+- Create a release using GitHub CLI
+- Provide more detailed navigation steps
+
+================================================================================
