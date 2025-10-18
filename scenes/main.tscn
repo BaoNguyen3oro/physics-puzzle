@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3yhk2gxhxcxv"]
+[gd_scene load_steps=5 format=3 uid="uid://c3yhk2gxhxcxv"]
 
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_main"]
 [ext_resource type="PackedScene" uid="uid://bqm8xv2yvwc3r" path="res://scenes/box.tscn" id="1_box"]
+[ext_resource type="PackedScene" uid="uid://dpk3xh8yvwc8t" path="res://scenes/target.tscn" id="2_target"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ground"]
 size = Vector2(1000, 50)
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_main")
 
 [node name="Ground" type="StaticBody2D" parent="."]
 position = Vector2(576, 600)
@@ -19,6 +22,9 @@ offset_top = -25.0
 offset_right = 500.0
 offset_bottom = 25.0
 color = Color(0.4, 0.3, 0.2, 1)
+
+[node name="Target" parent="." instance=ExtResource("2_target")]
+position = Vector2(576, 550)
 
 [node name="Box1" parent="." instance=ExtResource("1_box")]
 position = Vector2(350, 150)
